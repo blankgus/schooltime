@@ -271,7 +271,7 @@ with aba8:
                     st.rerun()
                 if col2.form_submit_button("🗑️ Excluir"):
                     st.session_state.feriados = [
-                        item for item in st.session_state.feriados if item.id != f.id
+                        item for item in st.session_state.feriados if item.id != f["id"]
                     ]
                     st.rerun()
 

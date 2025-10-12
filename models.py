@@ -28,9 +28,6 @@ class Turma:
     nome: str
     serie: str
     turno: str
-    tipo: str = "regular"  # "pcd", "inclusao", "regular"
-    disciplinas_turma: List[str] = field(default_factory=list)  # Ex: ["Matemática", "Português"]
-    regras_neuro: List[str] = field(default_factory=list)  # Ex: ["max_2_pesadas", "sem_aula_pos_intervalo"]
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
 
 @dataclass
@@ -52,6 +49,6 @@ class Aula:
 
 @dataclass
 class Feriado:
-    str
+     str
     motivo: str
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
